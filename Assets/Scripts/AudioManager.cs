@@ -21,12 +21,11 @@ public class AudioManager : MonoBehaviour
     }
 
     public void AjusteVolumeMusique(float volume){
-
-
-
-
+        audioMixer.SetFloat("MusiqueVolume", ConvertToLogarithmique(volume));
     }
 
-
+    private float ConvertToLogarithmique(float volume){
+        return Mathf.Log10(volume) * 20;
+    }
 
 }

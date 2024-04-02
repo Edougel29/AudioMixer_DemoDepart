@@ -2208,16 +2208,16 @@ MonoBehaviour:
   m_FillRect: {fileID: 1460657105}
   m_HandleRect: {fileID: 1089149122}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1004517206}
         m_TargetAssemblyTypeName: GestionnaireAudio, Assembly-CSharp
-        m_MethodName: AjusteVolumeMusique
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
