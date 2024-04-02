@@ -11,10 +11,13 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private Slider glissiereVolumeMusique
 
+    private AudioSource audioSource;
 
     void Start()
     {
         
+        audioSource = GetComponent<AudioSource>();
+
         //audioMixer.GetFloat("MusiqueVolume");
         //audioMixer.SetFloat("MusiqueVolume", -20f);
 
@@ -22,6 +25,7 @@ public class AudioManager : MonoBehaviour
 
     public void AjusteVolumeMusique(float volume){
         audioMixer.SetFloat("MusiqueVolume", ConvertToLogarithmique(volume));
+        audioSource.Play();
     }
 
     private float ConvertToLogarithmique(float volume){
